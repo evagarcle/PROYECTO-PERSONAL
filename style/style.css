@@ -1,0 +1,136 @@
+:root {
+  --rosa: rgb(254, 198, 152);
+  --gris: rgb(211, 196, 184);
+}
+
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  }
+
+
+/* HOME */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.cuadrado {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.home{
+  background-color: rgb(254, 198, 152);
+}
+
+.biografia{
+  background-color: rgb(211, 196, 184);
+}
+
+.portfolio{
+  background-color: rgb(211, 196, 184);
+}
+
+.contacto{
+  background-color: rgb(254, 198, 152);
+}
+
+.enlaces {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+  /* BIOGRAFIA */
+
+.container-biografia {
+  margin: 100px;
+}
+
+.imagenes-biografia {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* CONTACTO */
+
+.navegacionContacto {
+  display: flex;
+  justify-content: space-around;
+}
+
+fieldset{
+  margin-right: 300px;
+  margin-left: 300px;
+  background-color: var(--rosa);
+  border-radius: 20px;
+}
+
+legend {
+  background-color: var(--gris);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+.home2{
+  background-color: var(--rosa);
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.biografia2 {
+  background-color: var(--gris);
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.portfolio2{
+  background-color: var(--rosa);
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.contacto2{
+  background-color: var(--gris);
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.palabrasNavBio {
+  color: white;
+  text-decoration: none;
+}
+
+.selectorPizza {
+  te
+}

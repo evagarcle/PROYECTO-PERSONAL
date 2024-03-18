@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="home" href="./home.html">
+  <link rel="portfolio" href="./pages/portfolio.html">
+  <link rel="biografia" href="./pages/biografia.html">
+</head>
+<body>
+  <h1>CONTACTO</h1>
+
+  <nav class="navegacionContacto">
+    
+      <div class="home2"><a href="../home.html" class="palabrasNavBio">Home</a></div> 
+      <div class="biografia2"><a href="biografia.html" class="palabrasNavBio">Biografía</a></div>
+      <div class="portfolio2"><a href="portfolio.html" class="palabrasNavBio">Portfolio</a></div>
+      <div class="contacto2"><a href="contacto.html" class="palabrasNavBio">Contacto</a></div>
+    
+  </nav>
+
+
+   <form>
+    <h1>PERSONALIZA TU PIZZA Y ¡RECÓGELA CUANDO QUIERAS!</h1>
+   <fieldset>
+      <legend>ASÍ QUIERO QUE SEA MI PIZZA...</legend>
+      
+      <p><b>Masa</b></p>
+      <label for="mujer">Fina</label>
+      <input type="radio" id="mujer" name="sexo" value="mujer">
+      <label for="hombre">Estándar</label>
+      <input type="radio" id="hombre" name="sexo" value="hombre">
+      <label for="otro">Gruesa</label>
+      <input type="radio" id="otro" name="sexo" value="otro">
+      <br>
+      <br>
+      <p><b>¿Bordes rellenos de queso?</b></p>
+      <label for="si">Si</label>
+      <input type="checkbox" id="si" name="viejuner" value="si">
+      <label for="no">No</label>
+      <input type="checkbox" id="no" name="viejuner" value="no">
+      <br>
+      <br>
+      <label for="sobreti"><b>Intolerancias o alérgias...</b></label><br>
+      <textarea id="sobreti" name="sobreti" placeholder="Soy alérgico a..." rows="10" cols="30"></textarea>
+    
+
+       <br><br>
+
+
+        <label for="tipo" id="selectorPizza">SELECCIONA TU PIZZA:</label>
+        <select id="tipo">
+          <optgroup label="Clásicas">
+            <option>Carbonara</option>
+            <option>Cuatro quesos</option>
+            <option>Margarita</option>
+          </optgroup>
+          <optgroup label="Specials">
+            <option>Marinera</option>
+            <option>Boloñesa</option>
+          </optgroup>
+          <optgroup label="Healthy">
+              <option>"La de Pollo"</option>
+              <option>"La Veggie"</option>
+          </optgroup>
+          <optgroup label="Las Dulces">
+              <option value="deNutella">de Nutella</option>
+              <option value="deLotus">de Lotus</option>
+              <option value="deCahahuete">de Crema de Cacahuete</option>
+          </optgroup>
+       </select>
+
+       <br><br>
+
+       <label for="toppings">Toppings extra: </label><br>
+       <select id="toppings" name="toppings" multiple>
+        <option value="huevo">Huevo</option>
+        <option value="aguacate">Aguacate</option>
+        <option value="queso">Queso</option>
+        <option value="rúcula">Rúcula</option>
+        <option value="nutella">Nutella</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="cacahuete">Crema de cacahuete</option>
+        <option value="platano">Plátano</option>
+        <option value="lotus">Crema de Lotus</option>
+       </select>
+
+       <br><br>
+
+       
+  
+    </fieldset> 
+
+      <br>
+
+    <fieldset>
+      <legend>DATOS PERSONALES...</legend>
+      <label for="nombre"><b>Nombre:</b></label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" size="10" autofocus tabindex="1">
+      <br>
+      <br>
+      <label for="apellidos"><b>Apellidos:</b></label>
+      <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" size="30" tabindex="3">
+      <br>
+      <br>
+
+      <label for="telf">Teléfono:</label>
+      <input type="tel" id="telf" name="telf" placeholder="Teléfono" size="10">
+
+      <label for="fecha">Seleccione el día: </label>
+      <input type="date" id="fecha" name="fecha">
+
+      <br><br>
+
+      <label for="hora">Seleccione la hora: </label>
+      <input type="time" id="hora" name="hora">
+      
+    </fieldset> 
+
+    <input type="submit" value="submit">
+    <input type="reset">
+  
+
+  </form>
+</body>
+</html>
