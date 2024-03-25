@@ -7,6 +7,14 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+  background-image: url(../assets/tourism.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -14,7 +22,7 @@
   }
 
 
-/* HOME */
+/* NAVEGACION DE TODOS LOS HTML */
 
 .container {
   display: flex;
@@ -22,6 +30,16 @@
   gap: 10px;
   
 }
+/* ----------------------------------------------------------------- */
+.container-biografia, .container-portfolio, .container-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  
+}
+
+/* ----------------------------------------------------------------------- */
+
 
 .cuadrado {
   width: 300px;
@@ -34,26 +52,67 @@
   align-items: center;
   
 }
+/* -------------------------------------------------------------------------------- */
+.cuadrado-biografia, .cuadrado-portfolio, .cuadrado-contacto {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* --------------------------------------------------------------------------- */
 
 h1 {
   text-align: center;
 }
 
 .home{
+  background-color: rgba(254, 198, 152, 0.8);
+}
+.home:hover {
   background-color: rgb(254, 198, 152);
+  border: 2px solid black;
 }
 
 .biografia{
-  background-color: rgb(211, 196, 184);
+  background-color: rgba(211, 196, 184, 0.8);
 }
 
-.portfolio{
+.biografia:hover {
   background-color: rgb(211, 196, 184);
+  border: 2px solid black;
+}
+
+
+.portfolio{
+  background-color: rgba(211, 196, 184, 0.8);
+}
+
+.portfolio:hover {
+  background-color: rgb(211, 196, 184);
+  border: 2px solid black;
+}
+
+.portfolio-contacto {
+  background-color: rgba(254, 198, 152, 0.8);
+}
+.portfolio-contacto:hover {
+  background-color: rgb(254, 198, 152);
+  border: 2px solid black;
 }
 
 .contacto{
-  background-color: rgb(254, 198, 152);
+  background-color: rgba(254, 198, 152, 0.8);
 }
+.contacto:hover {
+  background-color: rgb(254, 198, 152);
+  border: 2px solid black;
+}
+
 
 .enlaces {
   font-size: 30px;
@@ -69,26 +128,51 @@ footer {
 
 
   /* BIOGRAFIA */
-
-.container-biografia {
-  margin: 100px;
+.div-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
 
 .imagenes-biografia {
-  display: flex;
-  justify-content: space-between;
+  width: 200px;
+  height: 150px;
 }
+
+
+
+.bodyBiografia, .bodyPortfolio {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bodyContacto {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+
+
 
 /* CONTACTO */
 
-.navegacionContacto {
-  display: flex;
-  justify-content: space-around;
-}
+
+
+
 
 fieldset{
-  margin-right: 300px;
-  margin-left: 300px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   background-color: var(--rosa);
   border-radius: 20px;
 }
@@ -103,20 +187,27 @@ legend {
 .home2{
   background-color: var(--rosa);
   padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   border: 1px solid black;
   border-radius: 20px;
 }
+
 .biografia2 {
   background-color: var(--gris);
   padding: 30px;
   border: 1px solid black;
   border-radius: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .portfolio2{
   background-color: var(--rosa);
   padding: 30px;
   border: 1px solid black;
   border-radius: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .contacto2{
@@ -124,6 +215,8 @@ legend {
   padding: 30px;
   border: 1px solid black;
   border-radius: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .palabrasNavBio {
@@ -131,6 +224,35 @@ legend {
   text-decoration: none;
 }
 
-.selectorPizza {
-  te
+
+.divBotones {
+  text-align: center;
+  margin: 10px;
+  
+}
+
+.botones {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--gris);
+}
+
+.botones:hover {
+  cursor: pointer;
+  background-color: var(--rosa);
+  border: 2px solid white;
+}
+
+.mediaPortfolio {
+  max-width: 30%;
+}
+
+.educacion {
+  display: flex;
+  justify-content: space-around;
+}
+
+.texto-educacion, .texto-experienciaLaboral {
+  line-height: 2;
 }
